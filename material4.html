@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/salas/material2.css">
+    <link rel="shortcut icon"  href="assets/img/favicon-256x256.png">   
+    <title>📗Materiales#4</title>
+</head>
+<body>
+    <br><br>
+   <center><div class="logo-container1">
+        <img src="assets/img/ova registro 2024-2 parte final.png" alt="Logo 2">
+    </div></center> 
+    <br><br> <br><br> <br><br>
+    
+   
+    
+    <!-- Círculos con funcionalidad de moverse -->
+    <div class="small-circles-container">
+        <div class="small-circle move">I</div>
+        <div class="small-circle move">N</div>
+        <div class="small-circle move">N</div>
+        <div class="small-circle move">O</div>
+        <div class="small-circle move">V</div>
+        <div class="small-circle move">A</div>
+        <div class="small-circle move">R</div>
+       <br><br>
+       
+    </div>
+    <h4 style="font-family: Segoe Script; color:#56c0d1" ><q>Párate sobre las letras de arriba para moverlas</q></h4>
+    <div class="logo-container">
+        <img src="assets/img/liderazgo.jpeg" alt="Logo 2">
+    </div>
+    
+    
+    <h4 style="color: #10134d; font-family: bree-serif;">Entra en los círculos para ver la información↓</h4>
+    <!-- Círculos con ventanas emergentes -->
+    <div class="small-circles-container">
+        <div class="small-circle" data-modal="modal0" style="
+        background-color: #56c0d1; /* Azul marino */
+        width: 20px; /* Ajusta el tamaño según tus necesidades */
+        height: 20px; /* Ajusta el tamaño según tus necesidades */
+        border-radius: 50%;
+        display: inline-block;
+        line-height: 50px;
+        text-align: center;
+        color: #fff; /* Color del texto dentro del círculo */
+        font-size: 20px; /* Tamaño del texto */
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    " onmouseover="this.style.backgroundColor='#002244';" onmouseout="this.style.backgroundColor='#003366';">
+        <!-- Contenido opcional -->
+        >
+
+        </div>
+        <div class="small-circle" data-modal="modal1"></div>
+        <div class="small-circle" data-modal="modal2"></div>
+        <div class="small-circle" data-modal="modal3"></div>
+    
+    </div>
+    <h2 style="color:#b6188a">Mentorías</h2> 
+ <!-- Modal 0 -->
+ <div id="modal0" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal0')">&times;</span>
+        <h1 style="color:#56c0d1">Mentorías</h1>
+        <img src="assets/img/nuevos/connotacion-psicologia (1).jpeg" alt="Imagen 0" class="modal-image">
+        <p style="color:#56c0d1">Reflexiones activas y colaborativas <b> en 3 momentos.</b>
+            <h2 style="color:#b6188a">Momentos del aprendizaje SEM</h2>
+        
+            <h3 style="color:#b6188a">Seguimiento</h3>
+        <p style="color:#56c0d1">El primero es el seguimiento frente al proceso, revisando los formatos diligenciados, las actividades y las evaluaciones</p>
+        <h3 style="color:#b6188a">Equipo Reflexivo</h3>
+        <El style="color:#56c0d1">El segundo momento es cuando grupal e individualmente se realiza feedback mediante equipo refelxivo
+        
+        <h3 style="color:#b6188a">Mejoramiento continúo</h3>
+        <p style="color:#56c0d1"></p>El tercer momento es cuando posterior a las retroalimentaciones se realizan los ajustes para mejorar los procesos 
+         entrevista clínica.</p>
+        
+        </p>
+
+
+        
+        <button class="close-button" onclick="closeModal('modal0')">🔒 Cerrar</button>
+    </div>
+</div>
+
+
+<!-- Modal 1 -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h1 style="color:#56c0d1">Seguimiento </h1>
+        <img src="assets/img/nuevos/connotacion-psicologia (2).jpeg" alt="Imagen 0" class="modal-image">
+        
+            <h2 style="color:#b6188a">Revisión del formato de registro</h2>
+            <p style="color:#56c0d1">Se examina cada 15 días, junto con el supervisor clínico el diligenciamiento de los registros, se hacen las correcciones y se resuelven dudas </b>
+             <br><br></b>   <button class="close-button" style="border-radius: 25px;" onclick="window.open('material3.1.html', '_blank')">📃 Formato</button>
+        </p>
+
+
+        
+        <button class="close-button" onclick="closeModal('modal1')">🔒 Cerrar</button>
+    </div>
+</div>
+
+
+<!-- Modal 2 -->
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h1 style="color:#56c0d1">Equipo reflexivo</h1>
+        <img src="assets/img/nuevos/connotacion-psicologia (3).jpeg" alt="Imagen 0" class="modal-image">
+        
+            <h2 style="color:#b6188a">Individual y grupal</h2>
+            <p style="color:#56c0d1">Cada 30 días, 
+                te invitamos a una valiosa oportunidad de crecimiento:
+                 reflexionar junto con tus compañeros y supervisor clínico sobre
+                  tu proceso de aprendizaje.<br><br> Este es un espacio para aclarar dudas, 
+                  afinar tus habilidades en el registro, la observación directa y la entrevista clínica. Aprovecha este momento para pulir cada detalle, asegurar un desempeño excepcional y avanzar con confianza en tu camino profesional.
+                <br><br><b> ¡Transforma cada reflexión en un paso firme hacia la excelencia! </b></p>
+             
+        </p>
+
+
+        
+        <button class="close-button" onclick="closeModal('modal2')">🔒 Cerrar</button>
+    </div>
+</div>
+
+
+<!-- Modal 3 -->
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h1 style="color:#56c0d1">Mejoramiento continúo</h1>
+        <img src="assets/img/nuevos/mejoramiento.jpeg" alt="Imagen 0" class="modal-image">       
+            <h2 style="color:#b6188a">Ajustes e Innovacción</h2>
+        <p style="color:#56c0d1">El mejoramiento continuo es clave en la práctica
+             clínica, donde los ajustes e innovaciones constantes aseguran
+              un proceso cada vez más efectivo y eficiente.<br><br>
+               A través del seguimiento quincenal, 
+               se revisan y perfeccionan los formatos de registro, y 
+               en la mentoría a 30 días, estas mejoras se consolidan, 
+               potenciando la calidad y el impacto de cada intervención. 
+            <br><br>
+           <b>¡Es un ciclo de crecimiento sin fin, enfocado en la excelencia y la humanización!</b> </p>
+          
+        
+
+
+        
+        <button class="close-button" onclick="closeModal('modal3')">🔒 Cerrar</button>
+    </div>
+</div>
+
+
+
+
+<!-- <img src="assets/img/losAteneos-2025.png" style="mask-image: linear-gradient(black 80%, transparent);  ; height: 20%; width:auto; "alt="afiche-epoc-2024"/> -->
+
+<img class="masthead-avatar mb-5" src="assets/img/foto -psicología-2025 (2).png" 
+     style="
+        mask-image: linear-gradient(black 80%, transparent); 
+        max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        width: auto; /* Permite que el ancho se ajuste automáticamente */
+        display: block; /* Asegura que no haya espacio adicional debajo de la imagen */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+        max-height: 300px; /* Ajusta la altura máxima en dispositivos móviles */
+     " 
+     alt="afiche-epoc-2024"
+>
+<br><br>
+
+<h3 style="color:#b6188a">"El trabajo en equipo<br>
+es el secreto que hace que gente<br>cómún consiga resultados<br> pocos comunes"</h3>
+<br>
+<center>
+    <h2 style="color:#56c0d1; font-family: Segoe Script">
+       Ifeanyi Onuoha
+    </h2>
+</center>
+
+<br><br> 
+
+<h2 style="color:#b6188a; font-family: Arial, sans-serif;">
+    OVAQuirón@2024
+</h2>
+ <!-- Botones OVA y Reto 1 -->
+<a href="index.html" class="button-ova">OVA</a>
+<a href="sala4.html" class="button-reto">Reto 4</a>
+
+
+
+<!-- <footer style="background-color:#bd197e; width: 100%; text-align: center; padding: 10px 0; color: white; font-family: 'Arial', sans-serif;">
+    <h6 id="copyrightFooter">Todos los derechos reservados PSIMAN©2024</h6>
+</footer> -->
+
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            });
+        }
+
+        document.querySelectorAll('.small-circle.move').forEach(circle => {
+            circle.addEventListener('mouseover', () => {
+                circle.style.animation = 'moveAndRotate 1s infinite';
+            });
+            circle.addEventListener('mouseout', () => {
+                circle.style.animation = '';
+            });
+        });
+
+        document.querySelectorAll('.small-circle[data-modal]').forEach(circle => {
+            circle.addEventListener('click', (event) => {
+                const modalId = event.currentTarget.getAttribute('data-modal');
+                openModal(modalId);
+            });
+        });
+    </script>
+</body>
+</html>

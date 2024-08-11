@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/salas/material2.css">
+    <link rel="shortcut icon" href="assets/img/favicon-256x256.png">   
+    <title>📗Materiales#3</title>
+</head>
+<body>
+    <br><br>
+    <center><div class="logo-container1">
+        <img src="assets/img/ova-psicologia-2025.png" alt="Logo 2">
+    </div></center> 
+    <br><br> <br><br> <br><br>
+    
+    <!-- Círculos con efecto de movimiento y cambio de tamaño -->
+    <style>
+        .small-circles-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .small-circle {
+            width: 40px;
+            height: 40px;
+            background-color: #3498db;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            animation: bounce 1.5s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+                background-color: #3498db;
+            }
+            50% {
+                transform: translateY(-20px);
+                background-color: #2ecc71;
+            }
+        }
+
+        /* Movimiento adicional */
+        .small-circle.move {
+            animation: bounce 2s infinite, move 5s infinite;
+        }
+
+        @keyframes move {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(30px);
+            }
+        }
+    </style>
+
+    <div class="small-circles-container">
+        <div class="small-circle move">R</div>
+        <div class="small-circle move">E</div>
+        <div class="small-circle move">G</div>
+        <div class="small-circle move">I</div>
+        <div class="small-circle move">S</div>
+        <div class="small-circle move">T</div>
+        <div class="small-circle move">R</div>
+        <div class="small-circle move">A</div>
+        <div class="small-circle move">R</div>
+    </div>
+
+    <h4 style="font-family: Segoe Script; color:#56c0d1"><q>Párate sobre las letras de arriba para moverlas</q></h4>
+    <div class="logo-container">
+        <img src="assets/img/psicologia-umanizales.jpeg" alt="Logo 2">
+    </div>
+    
+    <h4 style="color: #10134d; font-family: bree-serif;">Entra en los círculos para ver la información↓</h4>
+
+    <!-- Círculos con ventanas emergentes -->
+    <div class="small-circles-container">
+        <div class="small-circle" data-modal="modal0"></div>
+        <div class="small-circle" data-modal="modal1"></div>
+        <div class="small-circle" data-modal="modal2"></div>
+        <div class="small-circle" data-modal="modal3"></div>
+        <div class="small-circle" data-modal="modal4"></div>
+        <div class="small-circle" data-modal="modal5"></div>
+        <div class="small-circle" data-modal="modal6"></div>
+    </div>
+
+    <!-- Modal 0 -->
+    <div id="modal0" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal0')">&times;</span>
+            <h1 style="color:#56c0d1">Guía de Intervención</h1>
+            <img src="assets/img/psicologia-clinica-pereira.jpg" alt="Imagen 0" class="modal-image">
+            <p style="color:#56c0d1">Guía para una evaluación integral del consultante con <b>5 micromódulos en 4 momentos.</b>
+            <h2 style="color:#b6188a">Momentos del aprendizaje RRIR</h2>
+        
+            <h3 style="color:#b6188a">Revisión</h3>
+            <p style="color:#56c0d1">El primero es el esquema de la intervención que tiene <b>3 fases</b> y una duración aproximada entre 20-30 minutos en acompañamiento psicosocial y entre 30-60 minutos en Psicoterapia</p>
+            <h3 style="color:#b6188a">Registro</h3>
+            <p style="color:#56c0d1">El segundo y tercero son
+            <b>la caracterización clínica y sociodemográfica</b> sirven para conocer la información contextual de los sistemas del consultante <b>(Estadio Social).</p></b>
+            <h3 style="color:#b6188a">Intervención</h3>
+            <p style="color:#56c0d1">El cuarto es un microguión que sirve para <b>la intervención mediante la observación directa y la entrevista clínica</b>.</p>
+            <h3 style="color:#b6188a">Retroalimentación</h3>
+            <p style="color:#56c0d1">El quinto es la <b>Connotación Positiva</b> que es un feedback clínico, que sirve para retroalimentar lo trabajado durante la sesión, reforzar las potencialidades, fortalezas y oportunidades del consultante, y enganchar el seguimiento del <b>proceso psicoterapéutico</b>
+            <br><br><br><br>Esta herramienta te será útil para el registro clínico de las intervenciones y puede usarse para las actividades de <b><em>Psicoterapia</em></b> y <b><em>el Acompañamiento Psicosocial</em></b> dentro de diversas áreas del hospital.
+            </p>
+            <button class="close-button" onclick="closeModal('modal0')">🔒 Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h1 style="color:#56c0d1">Fases de Intervención</h1>
+            <img src="assets/img/1.esquemaIntervencion.PNG" alt="Imagen 1" class="modal-image">
+            <h1 style="color:#b6188a">Revisión</h1>
+            <p style="color:#56c0d1">Se propone <b>estructuralmente 3 fases</b> para la intervención clínica como son el <b>estadio social</b> para el contexto y los sistemas, <b>la intervención</b> mediante la observación directa, 
+            la entrevista y el registro clínico, y finalmente el <b><em>Feedback</em></b> <br><br>
+            El objetivo principal de la intervención es mejorar el bienestar emocional y mental, fomentando cambios positivos y el desarrollo de habilidades de afrontamiento efectivas. 
+            A través de una metodología colaborativa, terapeuta y consultante trabajan juntos para identificar y superar obstáculos, promoviendo una mejor calidad de vida y fortaleciendo la resiliencia ante futuras dificultades.
+            <br><br>El presente esquema sirve para cualquier <b>Enfoque Psicológico.</b>
+            <br><br><b>Adicionales:</b> Al iniciar la <b>Fase 1</b> es necesario en ese <b>encuadre</b> hacer una introducción muy breve con el consultante sobre la estructura de la sesión.<br><br>   
+            <b>Motivo de consulta:</b> Al iniciar la <b>Fase 2</b> es necesario en esa <b>indagación</b> preguntar por el <b>motivo de consulta</b> (Ampliar esta parte con el supervisor).<br><br>
+            <b>Expectativas:</b> Al terminar la <b>Fase 2</b> o un poco antes, es necesario en esa <b>Reorganización de la información</b> preguntar al consultante sobre <b>lo que espera lograr en el espacio/sesiones psicoterapéuticas</b> y conectar esa respuesta con la respuesta sobre el <b>motivo de consulta</b>, por lo menos, en la primera sesión, para construir un plan de intervención coherente con la lógica en el objetivo terapéutico del consultante. En la posteridad, se vuelve a preguntar sobre dicha cuestión para <b>centrarse en los objetivos terapéuticos en base al plan de trabajo propuesto</b>.<br><br>
+            </p><p style="color: #252cb4;"><br><b>Nota aclaratoria:</b> Las temáticas abordadas son un referente, más es necesario la socialización y discusión con el supervisor clínico para una mayor comprensión, aplicación y efectividad en la intervención.
+            <br><br>
+            Este material ha sido desarrollado en conjunto con las <b><em>Prácticas Clínicas de la Universidad de Manizales en Pereira</em></b>
+            </p>
+            <button class="close-button" onclick="closeModal('modal1')">🔒 Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h1 style="color:#56c0d1">Micromódulos</h1>
+            <img src="assets/img/2.micromodulos.PNG" alt="Imagen 2" class="modal-image">
+            <p style="color:#b6188a">Los <b>Micromódulos</b> están pensados como <b>pequeños bloques de información y aprendizaje</b> que se pueden completar en un corto periodo de tiempo.</p>
+            <p style="color:#56c0d1">Estos micromódulos son <b>versátiles y flexibles</b>, ideales para aquellos que buscan mejorar sus habilidades en poco tiempo y de manera específica.</p>
+            <p style="color:#b6188a">Son cinco micromódulos, que pueden ser usados en cuatro momentos claves:</p>
+            <ul style="color:#56c0d1">
+                <li>Al inicio de la evaluación</li>
+                <li>Durante la intervención</li>
+                <li>Al finalizar una sesión</li>
+                <li>Durante el seguimiento del consultante</li>
+            </ul>
+            <button class="close-button" onclick="closeModal('modal2')">🔒 Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h1 style="color:#56c0d1">Microguiones</h1>
+            <img src="assets/img/3.microguion.PNG" alt="Imagen 3" class="modal-image">
+            <p style="color:#56c0d1">Los <b>Microguiones</b> son herramientas útiles para los profesionales de la psicología, ya que les permiten realizar intervenciones más efectivas y personalizadas.</p>
+            <p style="color:#b6188a">Estos microguiones están diseñados para ser flexibles y adaptarse a las necesidades específicas de cada consultante.</p>
+            <p style="color:#56c0d1">Se recomienda utilizar estos microguiones como referencia durante las sesiones para asegurarse de que se están abordando todos los aspectos importantes del proceso terapéutico.</p>
+            <button class="close-button" onclick="closeModal('modal3')">🔒 Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h1 style="color:#56c0d1">Retroalimentación</h1>
+            <img src="assets/img/4.retroalimentacion.PNG" alt="Imagen 4" class="modal-image">
+            <p style="color:#b6188a">La <b>Retroalimentación</b> es un componente esencial en el proceso terapéutico, ya que permite al consultante recibir comentarios constructivos sobre su progreso.</p>
+            <p style="color:#56c0d1">Esta retroalimentación debe ser clara, específica y orientada a fortalecer las áreas de mejora del consultante, al tiempo que se refuerzan sus logros y avances.</p>
+            <p style="color:#b6188a">La retroalimentación efectiva contribuye a una mayor motivación y compromiso por parte del consultante hacia el proceso terapéutico.</p>
+            <button class="close-button" onclick="closeModal('modal4')">🔒 Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h1 style="color:#56c0d1">Psicoterapia</h1>
+            <img src="assets/img/5.psicoterapia.PNG" alt="Imagen 5" class="modal-image">
+            <p style="color:#56c0d1">La <b>Psicoterapia</b> es un proceso de intervención que tiene como objetivo principal el bienestar emocional y mental del consultante.</p>
+            <p style="color:#b6188a">Este proceso es guiado por un profesional de la psicología, quien utiliza diversas técnicas y enfoques terapéuticos para ayudar al consultante a superar sus dificultades y mejorar su calidad de vida.</p>
+            <p style="color:#56c0d1">La psicoterapia es un espacio seguro y confidencial donde el consultante puede expresar sus pensamientos, emociones y preocupaciones, y recibir el apoyo necesario para enfrentar sus desafíos.</p>
+            <button class="close-button" onclick="closeModal('modal5')">🔒 Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <h1 style="color:#56c0d1">Seguimiento</h1>
+            <img src="assets/img/6.seguimiento.PNG" alt="Imagen 6" class="modal-image">
+            <p style="color:#56c0d1">El <b>Seguimiento</b> es una parte crucial del proceso terapéutico, ya que permite evaluar el progreso del consultante y ajustar el enfoque de la intervención según sea necesario.</p>
+            <p style="color:#b6188a">El seguimiento regular ayuda a mantener el impulso del proceso terapéutico y garantiza que el consultante esté avanzando hacia sus objetivos.</p>
+            <p style="color:#56c0d1">Es recomendable programar sesiones de seguimiento periódicas para monitorear el progreso y hacer los ajustes necesarios en el plan de intervención.</p>
+            <button class="close-button" onclick="closeModal('modal6')">🔒 Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Estilos para los modales -->
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.7);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .close-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .close-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+
+    <!-- Script para controlar los modales -->
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                closeModal(event.target.id);
+            }
+        }
+
+        document.querySelectorAll('.small-circle.move').forEach(circle => {
+            circle.addEventListener('mouseover', () => {
+                circle.style.transform = 'translateY(-30px)';
+                circle.style.backgroundColor = '#8e44ad'; // Cambia a color púrpura cuando se coloca el ratón sobre él
+            });
+            circle.addEventListener('mouseout', () => {
+                circle.style.transform = 'translateY(0)';
+                circle.style.backgroundColor = '#3498db'; // Vuelve al color original cuando se quita el ratón
+            });
+        });
+
+        document.querySelectorAll('.small-circle[data-modal]').forEach(circle => {
+            circle.addEventListener('click', () => {
+                const modalId = circle.getAttribute('data-modal');
+                openModal(modalId);
+            });
+        });
+    </script>
+</body>
+</html>

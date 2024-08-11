@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;500&display=swap');
+/* 
+html {
+   cursor: url('https://fav.farm/🪂') 15 0, auto; 
+  
+} */
+
+
+
+html {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><defs><filter id="shadow" x="0%" y="0%" width="200%" height="200%"><feDropShadow dx="1" dy="1" stdDeviation="3" flood-color="%235091b9" /></filter></defs><text filter="url(%23shadow)" x="0" y="14">🪂</text></svg>')  15 0, auto
+}
+
+
+li {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><defs><filter id="shadow" x="0%" y="0%" width="200%" height="200%"><feDropShadow dx="1" dy="1" stdDeviation="3" flood-color="%235091b9" /></filter></defs><text filter="url(%23shadow)" x="0" y="14">🚀</text></svg>')  15 0, auto
+}
+
+
+
+.myButtonProject:hover {
+   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><defs><filter id="shadow" x="0%" y="0%" width="200%" height="200%"><feDropShadow dx="1" dy="1" stdDeviation="3" flood-color="%235091b9" /></filter></defs><text filter="url(%23shadow)" x="0" y="14">⛅</text></svg>')  15 0, auto
+}
+
+/* .myButtonProject:active {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><defs><filter id="shadow" x="0%" y="0%" width="200%" height="200%"><feDropShadow dx="1" dy="1" stdDeviation="3" flood-color="%235091b9" /></filter></defs><text filter="url(%23shadow)" x="0" y="14">⭐</text></svg>')  15 0, auto
+} */
+
+.myButtonProject {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><defs><filter id="shadow" x="0%" y="0%" width="200%" height="200%"><feDropShadow dx="1" dy="1" stdDeviation="3" flood-color="%235091b9" /></filter></defs><text filter="url(%23shadow)" x="0" y="14">😃</text></svg>')  15 0, auto
+}
+
+.boton2 {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><defs><filter id="shadow" x="0%" y="0%" width="200%" height="200%"><feDropShadow dx="1" dy="1" stdDeviation="3" flood-color="%235091b9" /></filter></defs><text filter="url(%23shadow)" x="0" y="14">🚀</text></svg>')  15 0, auto
+}
+
+.boton {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><defs><filter id="shadow" x="0%" y="0%" width="200%" height="200%"><feDropShadow dx="1" dy="1" stdDeviation="3" flood-color="%235091b9" /></filter></defs><text filter="url(%23shadow)" x="0" y="14">🚀</text></svg>')  15 0, auto
+} 
+
+#botonMain {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><defs><filter id="shadow" x="0%" y="0%" width="200%" height="200%"><feDropShadow dx="1" dy="1" stdDeviation="3" flood-color="%235091b9" /></filter></defs><text filter="url(%23shadow)" x="0" y="14">🐱‍🏍</text></svg>')  15 0, auto
+} 
+
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  top: 0;
+  margin: 0;
+  position: fixed;
+  z-index:10;
+  width: 100%;
+  color: green;
+  background: #17A4BA;
+  box-shadow: 4px 7px 5px 0px rgba(62, 66, 66, 0.21);
+  display: flex;
+}
+
+#logo-titulo {
+  justify-content: flex-start;
+  position: left;
+  margin-left: 25px;
+  width: 15%;
+  color: green;
+  background: #17A4BA;
+
+}
+
+#menu {
+  width: 85%;
+  display: flex;
+  position: right;
+  justify-content: right;
+  background-color: #17A4BA;
+ 
+}
+
+li {
+  background-color:#17A4BA;
+  border-radius: 10%;
+  align-items: center;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  list-style: none;
+  height:20px;
+  color: white;
+  font-weight: normal;
+font-weight: bold;
+  
+}
+
+
+#titulo{
+font-size:25px;
+font-weight: bold;
+color: white;
+}
+
+nav ul a {
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  background-color: #fffbfa;
+}
+
+h3 {
+  text-align: center;
+}
+p {
+  text-align: center;
+  width: 200px;
+
+}
+
+
+
+#boxMain{
+  
+     background-color: white;
+     height: 800px;
+     margin-bottom: 6px;
+}
+
+
+
+
+
+section {
+  padding: 3em;
+  align-items: center;
+  justify-content: center;
+}
+
+#box1 {
+  background-color: cadetblue;
+  background-size: cover;
+  height: 800px;
+}
+
+
+
+
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+
+h2 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.textoProjecto{
+    font-family: 'Work Sans', sans-serif;
+    color: #040655;
+
+  
+}
+
+.tituloMenor{
+  color: #280775;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+.letraProjecto{
+  color: #280775;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  width: 100%;
+}
+
+.card-text{
+    width: 100%;
+    font-size: 8px;
+    font-size: 1vw;
+    justify-content: center;
+    /* border: solid purple 2px; */
+    color: white;
+    word-wrap: break-word;
+  }
+
+
+h1 {
+  color: #1c70ad;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 2px 2px 2px #1f5e6c;
+  font-size: 3em;
+  text-align: center;
+  padding:0.4px;
+}
+
+.proyecto{
+
+    color:white ;
+    margin-top: 1%;
+}
+
+.contacto{
+
+    color:whitesmoke ;
+    margin-top: 7%;
+}
+
+/* TEXTO */
+.textoInicial {
+  font-size: 1em;
+  justify-content: center;
+  padding: 0 em 0 1em;
+  text-align: center;
+  background-color: white;
+  width:100%;
+  color: #094e8f;
+ 
+}
+
+p::first-letter{
+  font-size: 2rem;
+}
+
+
+/* ANIMACIONES */
+#luna{
+  position: fixed;
+   z-index:10; 
+  top:1em;
+  left:0.5%;
+  width: 3%;
+  margin-top:-10px;
+}
+
+#astronauta{
+  margin-top: 8%;
+}
+
+
+#cohete{
+  align-items: center;
+}
+
+#lunaPequena{
+  margin-right:50%;
+
+}
+
+/* BOTONES */
+
+/* 
+.boton {
+  background-color: #e05e1d;
+  border-radius: 10%;
+  border: none;
+  color: white;
+  font-size: 1em;
+  padding: 16px 16px;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.boton:hover {
+  background-color: #ed1c13;
+  opacity: 0.6;
+  font-size: 1.1em;
+} */
+
+#botonMain{
+  text-align:center;
+}
+
+
+.boton {
+  box-shadow: inset 0px 1px 0px 0px #97c4fe;
+  background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+  background-color: #3d94f6;
+  border-radius: 6px;
+  border: 1px solid #337fed;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #1570cd;
+  margin-left: 38%;
+}
+
+.boton2 {
+  box-shadow: inset 0px 1px 0px 0px #97c4fe;
+  background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+  background-color: #3d94f6;
+  border-radius: 6px;
+  border: 1px solid #337fed;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #1570cd;
+  margin-left: 30%;
+}
+
+/*DISEÑO B DEL BOTON*/
+/* .boton:hover {
+  background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+  background-color: #1e62d0;
+}
+USANDO ACTIVE, SE BLOQUEA FUNCIONALIDAD DEL BOTÓN
+.boton:active {
+  position: absolute;
+  top: 40px;
+  right: 100px;
+} */
+
+.myButtonProject {
+    box-shadow: inset 0px 1px 0px 0px #97c4fe;
+    background: linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+    background-color: #3d94f6;
+    border-radius: 6px;
+    border: 1px solid #337fed;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #1570cd;
+    margin-right: 25%;
+    margin-left: 31%;
+    
+  }
+  .myButtonProject:hover {
+    background: linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+    background-color: #1e62d0;
+  }
+  .myButtonProject:active {
+    position: absolute;
+    top: 40px;
+    right: 100px;
+  }
+ 
+/* FUNCIONALIDAD BOTON */
+.popup {
+  width: 100%;
+  top: 0%;
+  left: 5%;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: transform 0.4s, top 0.4s;
+  visibility: hidden;
+}
+
+.open-popup {
+  visibility: visible;
+  top: 60%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup iframe {
+  width: 100%;
+  margin: 0 auto;
+  
+} 
+
+.texto1 {
+  color: white;
+  padding: 1em;
+  text-align: justify;
+  font-size: 0.5em;
+}
+
+/* CAJAS */
+
+#box2 {
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-around;
+  height: 1000px;
+}
+
+#box3{
+    background-color: cadetblue;
+}
+
+#cont {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cajaTextoPrincipal{
+  flex-wrap: wrap;
+  justify-content: stretch;
+   width: 30%;
+   height:225px;
+  background-color: white;
+   border-radius:50px;
+  -moz-border-radius:50px;
+  -webkit-border-radius:50px;
+}
+
+.caja{
+    flex-wrap: wrap;
+    justify-content: stretch;
+    width: 18rem;
+     height:20%;
+     background-color: white;
+     border-radius:50px;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    border: 10px solid #2c3e50;
+  }
+
+.textBox{
+    width: 15%;
+    height: 18px;
+    
+}
+
+  
+/* FOOTER */
+footer {
+  background-color: #2c3e50;
+  height: 50px;
+  width: 100%;
+  
+}
+
+#copyrightFooter{
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* BREAKPOINT  */
+@media screen and (max-width: 320px) {
+  section {
+    flex-direction: column;
+    background: blue;
+  }
+  #cont {
+    flex-direction: column;
+    background-color: white;
+  }
+
+  nav {
+    background: transparent;
+    
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .caja {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .texto1 {
+    font-size: 1.2em;
+  }
+}

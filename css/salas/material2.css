@@ -1,0 +1,246 @@
+/* body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 240vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+} */
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Utiliza min-height para permitir que el contenido se expanda */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Asegura que el padding y border no afecten el tamaño total */
+}
+
+@media (max-width: 768px) {
+    body {
+        /* Ajuste adicional para pantallas más pequeñas, si es necesario */
+        min-height: auto; /* Permite que el contenido ocupe la altura mínima necesaria */
+    }
+}
+
+
+.logo-container {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .logo-container img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 50%;
+        }
+        .small-circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #c72c77;
+            margin: 5px;
+            cursor: pointer;
+            position: relative;
+            transition: transform 0.5s;
+        }
+        .small-circles-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+          
+        }
+        .small-circle.move {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+        }
+        h1, h2, h3 {
+            margin: 10px 0;
+            text-align: center;
+            font-family: 'Segoe Script', cursive;
+        }
+
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .modal-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .close-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .close-button:hover {
+            background-color: #0056b3;
+        }
+        @keyframes moveAndRotate {
+            0% {
+                transform: translateX(0) rotate(0deg);
+            }
+            50% {
+                transform: translateX(100px) rotate(180deg);
+            }
+            100% {
+                transform: translateX(0) rotate(360deg);
+            }
+        }
+  
+/* .logo-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Ajusta la altura de la imagen a la mitad de la pantalla */
+
+
+
+/* Asegúrate de incluir la fuente Open Comic en tu proyecto */
+@import url('https://fonts.googleapis.com/css2?family=Open+Comic:wght@400;700&display=swap');
+
+/* Estilo general para la imagen */
+/* .logo-container1 img {
+    max-width: 80%;
+} */
+
+/* Ajuste específico para pantallas pequeñas */
+/* @media (max-width: 768px) {
+    .logo-container1 img {
+        max-width: 80%; /* 
+    }
+} */
+
+
+/* Estilo general para la imagen */
+.logo-container1 img {
+    max-width: 50%; /* Tamaño en pantallas grandes */
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+/* Ajuste específico para pantallas pequeñas */
+@media (max-width: 768px) {
+    .logo-container1 img {
+        max-width: 80%; /* Aumenta el tamaño en pantallas pequeñas */
+    }
+}
+
+
+/* Estilos para el botón OVA */
+.button-ova {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(145deg, #a73d9d, #7a1f8d);
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Comic', cursive;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    line-height: 100px; /* Centra el texto verticalmente */
+    position: fixed;
+    top: 50%;
+    left: 20px; /* Distancia desde el borde izquierdo de la página */
+    transform: translateY(-50%); /* Centra el botón verticalmente */
+    transition: background 0.3s, transform 0.3s;
+}
+
+.button-ova:hover {
+    background: linear-gradient(145deg, #7a1f8d, #a73d9d);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.button-ova:active {
+    background: linear-gradient(145deg, #9b3e8e, #6b1f6b);
+    transform: translateY(-50%) scale(1);
+}
+
+/* Estilos para el botón Reto 1 */
+.button-reto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(145deg, #d16b91, #c72c77);
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Comic', cursive;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    line-height: 100px; /* Centra el texto verticalmente */
+    position: fixed;
+    top: 50%;
+    right: 25px; /* Distancia desde el borde derecho de la página */
+    transform: translateY(-50%); /* Centra el botón verticalmente */
+    transition: background 0.3s, transform 0.3s;
+}
+
+.button-reto:hover {
+    background: linear-gradient(145deg, #c72c77, #d16b91);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.button-reto:active {
+    background: linear-gradient(145deg, #b52a6a, #a92c6d);
+    transform: translateY(-50%) scale(1);
+}
+
+

@@ -142,12 +142,87 @@ alt="logo del OVA" style="display: block; margin: 0 auto; width: 5cm; height: au
     <br>
     <br>
 
+ 
     <footer>
+
+     
+       
+      
+
+
+      <div id="popup" class="popup">
+        <h1>Supervisión Maestría Clínica</h1>
+        <img src="assets/img/nuevos/sanmarcos2024-2-2.jpeg" height="250px" width="250px" alt="Descripción de la imagen" class="popup-img">
+        <p style="color: #800000;"><b>!Eleva tus competencias clínicas en psicología!</b> <br>Explora nuestros contenidos y domina las habilidades clave para destacar en tu práctica profesional.</p>
+        <a href="master/index.html" target="_blank"
+   style="
+     display: inline-block; /* Hacer que el enlace se comporte como un botón */
+     padding: 10px 20px; /* Espaciado interno del botón */
+     font-size: 1em; /* Tamaño de la fuente */
+     color: #fff; /* Color del texto */
+     background-color: #800000; /* Color de fondo vinotinto */
+     border: 2px solid #800000; /* Borde vinotinto */
+     border-radius: 25px; /* Bordes redondeados de 25px */
+     text-decoration: none; /* Sin subrayado */
+     text-align: center; /* Alinear el texto al centro */
+     transition: background-color 0.3s, border-color 0.3s; /* Transición para el hover */
+   " 
+   onmouseover="this.style.backgroundColor='#600000'; this.style.borderColor='#600000';"
+   onmouseout="this.style.backgroundColor='#800000'; this.style.borderColor='#800000';">
+   Contenidos
+</a><br><br>
+        <button class="close-popup" onclick="closePopup()">Cerrar</button>
+        
+        
+      </div>
+      
+      <!-- Botón para abrir el popup -->
+      <button class="small-circle-btn" onclick="togglePopup()">👨🏻‍⚕️</button>
+
+     
+<!-- Botón para abrir el popup -->
+
+      <button class="small-circle-btn" onclick="togglePopup()">👨🏻‍⚕️</button>
       <h6 id="copyrightFooter">OVAQUIRÓN©2024 - Todos los derechos reservados</h6>
     </footer>
 
-  
+
+
    
+
+<script>
+
+
+
+function togglePopup() {
+        const popup = document.getElementById('popup');
+        if (popup.style.display === 'block') {
+            popup.style.display = 'none';
+        } else {
+            popup.style.display = 'block';
+        }
+    }
+
+    // Función para cerrar el popup
+    function closePopup() {
+        const popup = document.getElementById('popup');
+        popup.style.display = 'none';
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script>
     let popup = document.getElementById("popup");

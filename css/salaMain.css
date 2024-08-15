@@ -510,3 +510,140 @@ footer {
     font-size: 1.2em;
   }
 }
+
+
+/* Estilo para el botón circular pequeño */
+.small-circle-btn {
+  position: fixed; /* Fija el botón en la pantalla */
+  bottom: 20px; /* Ajusta la posición desde el fondo */
+  right: 20px; /* Ajusta la posición desde el borde derecho */
+  width: 40px; /* Diámetro del botón (1 cm aproximadamente) */
+  height: 40px; /* Diámetro del botón (1 cm aproximadamente) */
+  border-radius: 50%; /* Hace que el botón sea circular */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  font-size: 1.2em; /* Tamaño del icono en el botón */
+  display: flex; /* Utiliza flexbox para centrar el icono */
+  align-items: center; /* Centra verticalmente el icono */
+  justify-content: center; /* Centra horizontalmente el icono */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
+  transition: background-color 0.3s; /* Transición para el color de fondo */
+}
+
+.small-circle-btn:hover {
+  background-color: #0056b3; /* Color de fondo en hover */
+}
+
+
+/* Estilo para el botón circular pequeño */
+.small-circle-btn {
+  position: fixed; /* Fija el botón en la pantalla */
+  bottom: 20px; /* Ajusta la posición desde el fondo */
+  right: 20px; /* Ajusta la posición desde el borde derecho */
+  width: 40px; /* Diámetro del botón (1 cm aproximadamente) */
+  height: 40px; /* Diámetro del botón (1 cm aproximadamente) */
+  border-radius: 50%; /* Hace que el botón sea circular */
+  background-color: #d51089; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  font-size: 1.2em; /* Tamaño del icono en el botón */
+  display: flex; /* Utiliza flexbox para centrar el icono */
+  align-items: center; /* Centra verticalmente el icono */
+  justify-content: center; /* Centra horizontalmente el icono */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
+  transition: background-color 0.3s; /* Transición para el color de fondo */
+}
+
+.small-circle-btn:hover {
+  background-color: #0056b3; /* Color de fondo en hover */
+}
+
+
+
+/* Estilo para el botón que abre el popup */
+.open-popup-btn {
+  position: fixed; /* Fija el botón en la pantalla */
+  bottom: 20px; /* Ajusta desde la parte inferior de la pantalla */
+  right: 20px; /* Ajusta desde el borde derecho de la pantalla */
+  background-color: #007bff; /* Color del botón */
+  color: #fff;
+  border: none;
+  border-radius: 50%; /* Botón circular */
+  width: 50px;
+  height: 50px;
+  font-size: 1.5em;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px;
+  z-index: 1001; /* Asegura que esté encima del popup */
+}
+
+/* Estilo del popup */
+.popup {
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Fija en la pantalla */
+  top: 50%;
+  left: 3%;
+  transform: translate(-50%, -50%); /* Centra el popup */
+  width: 80%;
+  max-width: 500px;
+  max-height: 80%;
+  background-color: #fff;
+  color: #000;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1000; /* Asegura que esté encima de otros elementos */
+  text-align: center;
+  overflow-y: auto; /* Desplazamiento vertical */
+  overflow-x: hidden; /* Sin desplazamiento horizontal */
+}
+
+/* Botón de cierre en la esquina */
+.close-popup-x {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #ff6f61;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+/* Botón de cierre al pie del popup */
+.close-popup {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 0.9em;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.close-popup:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo del enlace */
+.popup-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.popup-link:hover {
+  text-decoration: underline;
+}
+
+.popup-img {
+  width: 250px; /* Ajusta el tamaño de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 8px; /* Redondea los bordes de la imagen, si es necesario */
+  margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
+

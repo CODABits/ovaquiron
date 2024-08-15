@@ -55,3 +55,20 @@
 //   }
 // }
   
+// Función para abrir y cerrar el popup
+// Función para abrir el popup
+function togglePopup() {
+    const popup = document.getElementById('popup');
+    if (popup.style.display === 'block') {
+        popup.style.display = 'none';
+    } else {
+        popup.style.display = 'block';
+    }
+}
+
+// Función para cerrar el popup
+function closePopup() {
+    const popup = document.getElementById('popup');
+    popup.style.display = 'none';
+}
+

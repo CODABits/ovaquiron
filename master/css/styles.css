@@ -1,0 +1,396 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Fondo degradado azul claro y oscuro */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Asegura que el cuerpo tenga al menos la altura de la ventana */
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo-container {
+    margin: 20px 0;
+}
+
+/* Contenedor del logo */
+.logo {
+    width: 250px; /* Tamaño del contenedor */
+    height: 250px; /* Tamaño del contenedor */
+    border-radius: 50%; /* Hace que el contenedor sea circular */
+    background-color: #fff; /* Color de fondo del contenedor */
+    border: 5px solid #ffffff; /* Borde del contenedor */
+    display: inline-block; /* Alinea el contenedor en línea */
+    overflow: hidden; /* Oculta la parte de la imagen que sobresale del contenedor */
+    position: relative; /* Posiciona el contenedor de manera que se pueda controlar el contenido */
+}
+
+/* Imagen dentro del contenedor */
+.logo img {
+    position: absolute; /* Permite controlar la posición de la imagen dentro del contenedor */
+    bottom: 0; /* Alinea la parte inferior de la imagen con la parte inferior del contenedor */
+    left: 50%; /* Centra la imagen horizontalmente en el contenedor */
+    transform: translateX(-50%); /* Ajusta la posición para centrar la imagen horizontalmente */
+    width: 100%; /* Asegura que la imagen cubra todo el contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor sin distorsionarse */
+}
+
+
+.button-container {
+    margin: 20px 0;
+    
+}
+
+.upload-button {
+    width: 120px;
+    height: 120px;
+    background-color: #329a7d; /* Color verde vibrante */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 2em;
+    line-height: 120px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.upload-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.content {
+    margin: 20px;
+    font-size: 1.2em;
+}
+.circle-info-container {
+display: flex;
+justify-content: center;
+gap: 20px; /* Espacio entre círculos */
+flex-wrap: wrap;
+margin-bottom: 20px;
+padding: 10px; /* Asegura espacio alrededor del contenedor */
+height: 60px;
+}
+
+.circle-info {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 80px; /* Tamaño del círculo */
+height: 80px; /* Tamaño del círculo */
+border-radius: 50%;
+background-color: #fff;
+border: 4px solid #100656; /* Azul claro */
+font-size: 1.8em; /* Tamaño del emoji, ajusta según sea necesario */
+color: #0072ff; /* Azul oscuro */
+cursor: pointer;
+position: relative;
+margin-bottom: 40px; /* Espacio suficiente para el texto debajo */
+}
+
+.circle-info div:first-child {
+font-size: 1.2em; /* Tamaño del emoji más pequeño */
+}
+
+.circle-info-text {
+margin-top: 50px; /* Espacio entre el círculo y el texto, ajusta según sea necesario */
+font-size: 1em;
+color: #fff;
+text-align: center;
+position: relative;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: left;
+    z-index: 10;
+    box-sizing: border-box;
+    overflow: hidden;
+    max-height: 90vh; /* Para evitar que el popup sea más alto que la vista */
+    overflow-y: auto;
+}
+
+.popup img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el título en el popup */
+.popup h2 {
+    text-align: center; /* Centra el texto horizontalmente */
+    color: crimson; /* Color azul claro */
+    font-family: 'Segoe Script', cursive; /* Fuente deseada */
+    font-size: 1.2em; /* Tamaño del texto */
+    margin: 0; /* Ajusta los márgenes para que no haya espacio extra */
+}
+
+
+.popup p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.popup .close-btn, .popup .close-btn-x {
+    display: block;
+    background-color: #ff6f61; /* Rojo coral */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 0.9em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin: 10px auto; /* Centra el botón */
+}
+
+.popup .close-btn:hover, .popup .close-btn-x:hover {
+    background-color: #ff4d4d;
+}
+
+.popup .close-btn-x {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: #2a0a9e;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.footer {
+    padding: 15px;
+    background-color: #003366; /* Azul oscuro */
+    color: #fff;
+    font-size: 0.9em;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+.logo-lolous {
+display: flex;
+justify-content: center;
+gap: 15px; /* Espacio entre los logotipos */
+padding: 20px;
+margin-bottom: 100px; /* Ajusta este valor según sea necesario */
+}
+
+
+.empresa {
+width: 75px; /* Tamaño del logotipo */
+height: 75px; /* Tamaño del logotipo */
+border-radius: 50%;
+background-color: #fff;
+border: 2px solid #00c6ff; /* Color del borde */
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+
+.logo-lolous {
+display: flex;
+justify-content: center;
+gap: 15px; /* Espacio entre los logotipos */
+padding: 20px;
+}
+
+.empresa {
+width: 75px; /* Tamaño del logotipo */
+height: 75px; /* Tamaño del logotipo */
+border-radius: 50%;
+background-color: #fff;
+border: 2px solid #050568; /* Color del borde */
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+
+.empresa img {
+max-width: 100%;
+max-height: 100%;
+object-fit: contain;
+}
+
+.categories-container {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
+    margin-bottom: 20px; /* Espacio en la parte inferior */
+}
+
+.category {
+    color: #fff; /* Texto blanco */
+    font-family: 'Segoe Script', cursive; /* Fuente Segoe Script */
+    font-size: 1.2em; /* Tamaño del texto */
+    text-align: center;
+}
+
+
+/* Botón para abrir el popup */
+.open-popup-btn {
+    position: fixed;
+    bottom: 20px; /* Ajusta la posición desde el fondo */
+    right: 20px; /* Ajusta la posición desde el borde derecho */
+    width: 50px; /* Tamaño del botón */
+    height: 50px; /* Tamaño del botón */
+    background-color: #ff6f61; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px; /* Centra el texto verticalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    z-index: 1001; /* Asegura que esté encima del popup */
+}
+
+.open-popup-btn:hover {
+    background-color: #ff4d4d;
+}
+
+
+
+
+/* Botón para abrir el popup */
+.open-popup-btn {
+    position: fixed;
+    bottom: 20px; /* Ajusta la posición desde el fondo */
+    right: 20px; /* Ajusta la posición desde el borde derecho */
+    width: 50px; /* Tamaño del botón */
+    height: 50px; /* Tamaño del botón */
+    background-color: #ff6f61; /* Color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px; /* Centra el texto verticalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    z-index: 1001; /* Asegura que esté encima del popup */
+}
+
+.open-popup-btn:hover {
+    background-color: #ff4d4d;
+}
+
+
+/* Popup */
+.author-popup {
+    display: none; /* Inicialmente oculto */
+    position: absolute; /* Posición absoluta respecto al elemento que lo activa */
+    bottom: 60px; /* Ajusta la posición desde el fondo (cercano al botón) */
+    left: 50%; /* Ajusta la posición desde el borde izquierdo */
+    transform: translateX(-50%); /* Centra el popup horizontalmente */
+    width: 300px; /* Ampliado el ancho del popup */
+    max-height: 80vh; /* Máxima altura del popup respecto a la altura de la ventana */
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total del popup */
+    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es mayor que el alto del popup */
+    text-align: center;
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    font-family: 'Segoe Script', cursive; /* Fuente deseada */
+}
+
+/* Títulos y contenido */
+.author-popup h1 {
+    font-size: 1.5em; /* Aumentado el tamaño del título */
+    margin: 0 0 15px 0;
+}
+
+.author-popup img {
+    width: 120px; /* Tamaño de la imagen ampliado */
+    height: 120px; /* Tamaño de la imagen ampliado */
+    border-radius: 50%; /* Imagen circular */
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
+    margin: 15px 0;
+}
+
+.author-popup p {
+    margin: 10px 0; /* Ampliado el margen */
+}
+
+/* Botón de cierre en la parte superior */
+.close-author-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff6f61; /* Color del botón de cierre */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px; /* Ampliado el tamaño del botón de cierre */
+    height: 30px; /* Ampliado el tamaño del botón de cierre */
+    font-size: 1.5em;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    transition: background-color 0.3s;
+}
+
+.close-author-popup:hover {
+    background-color: #ff4d4d;
+}
+
+/* Botón azul al final del contenido */
+.blue-close-popup {
+    background-color: #007bff; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px 25px; /* Ampliado el padding */
+    cursor: pointer;
+    font-size: 18px; /* Aumentado el tamaño de la fuente */
+    transition: background-color 0.3s ease;
+    display: block; /* Hace que el botón ocupe todo el ancho disponible */
+    margin: 20px auto 0; /* Centra el botón horizontalmente y agrega espacio arriba */
+}

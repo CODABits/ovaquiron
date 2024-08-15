@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master HSM </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="shortcut icon" href="assets/img/favicon-256x256.png">  
+</head>
+<body>
+    <div>
+        <h1 style="font-family: Segoe script;">Maestría Psicología Clínica</h1>
+        <h2 style="font-family: Segoe script; color: darkblue;">HSM 2024-2</h2>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="assets/img/sanmarcos2024-2-1.jpeg" alt="Logo">
+            </div>
+        </div>
+        <div class="button-container">
+            <a class="upload-button" href="https://drive.google.com/drive/folders/1pcvceLB8XkWArYPjpxDtK8fWtIY9XLSv?usp=sharing" target="_blank">📂</a>
+        </div>
+        <div class="content">
+            <p>
+              <b style="font-family: Segoe script; font-size: 26px;">Felicitaciones!!!</b><br><br>
+                <b>Avanzaste el primer paso hacia la excelencia!</b><br><br>
+                Revisa y trabaja con dedicación<br>
+                sobre el material de la práctica clínica y <br>
+                desbloquea tu potencial para transformar vidas.<br><br>
+                <b style="font-family: Segoe script; font-size: 26px;">
+                  "El punto es unificar los opuestos,<br>
+                   tanto positivos como negativos, <br>
+                  descubriendo un terreno que <br>trasciende y abarca ambos"</b><br><br>
+                 
+                <b style="font-family: Segoe script; font-size: 26px; color: rgb(45, 104, 89);">Ken Wilber</b><br><br>
+            
+            </p>
+        </div>
+        <div class="circle-info-container">
+            <div class="circle-info" onclick="togglePopup('popup1')">
+                <div>👨🏻‍⚕️</div>
+            </div>
+            <div class="circle-info" onclick="togglePopup('popup2')">
+                <div>👩‍👩‍👧‍👦</div>
+            </div>
+            <div class="circle-info" onclick="togglePopup('popup3')">
+                <div>📢</div>
+            </div>
+           
+        </div>
+        <div class="categories-container">
+            <div class="category">Clínico</div>
+            <div class="category">Educativo</div>
+            <div class="category">Social</div>
+        </div>
+        
+        <div class="logo-lolous">
+            <div class="empresa">
+                <img src="assets/img/logo-psiman-sin-fondo.png" alt="Logo 1">
+            </div>
+            <div class="empresa">
+                <img src="assets/img/logo_umanizales1.png" alt="Logo 2">
+            </div>
+            <div class="empresa">
+                <img src="assets/img/LOGO-SAN-MARCOS-200-200.png" alt="Logo 3">
+            </div>
+        </div>
+        
+        
+        </div>
+        <div id="popup1" class="popup">
+            <button class="close-btn-x" onclick="closePopup('popup1')">&times;</button>
+            <h2>Atención Psicológica</h2>
+            <img src="assets/img/maestria-manizales-psicologia.jpeg" alt="Imagen 1">
+            <p style="color:rgb(20, 205, 205)">"Aprende a transformar vidas a través de la psicoterapia
+                 y el acompañamiento psicosocial.
+                 <br><br>
+                 Con nuestras herramientas y metodologías innovadoras,
+                  desarrollarás las habilidades necesarias para guiar a
+                   otros en su bienestar emocional y mental. 
+                   <br><br>
+                   Te ofrecemos una formación integral que te preparará para 
+                   enfrentar los desafíos del acompañamiento terapéutico con
+                    confianza y profesionalismo.
+                    <br><br>
+                    <b> ¡Únete a esta experiencia formativa y conviértete en un agente de cambio en la vida de quienes más lo necesitan!"</b></p>
+            <button class="close-btn" onclick="closePopup('popup1')">Cerrar</button>
+        </div>
+        <div id="popup2" class="popup">
+            <button class="close-btn-x" onclick="closePopup('popup2')">&times;</button>
+            <h2>Capacitaciones</h2>
+            <img src="assets/img/sanmarcos2024-2-2.jpeg" alt="Imagen 2">
+            <p style="color:rgb(20, 205, 205)">
+                Desarrolla tus habilidades en nuestras capacitaciones psicoeducativas,
+                <br><br> diseñadas para fortalecer el trabajo asistencial y administrativo 
+                 en el hospital.
+                 <br><br> Nuestro enfoque integral te brindará herramientas clave para
+                 mejorar la atención con usuarios,    
+                 sus familias y la comunidad, promoviendo un ambiente de cuidado y bienestar.
+                 <br><br> Aprende a gestionar de manera efectiva los retos
+                  diarios del entorno hospitalario,
+                   potenciando tu rol dentro del equipo y contribuyendo
+                    al bienestar emocional de todos los involucrados. 
+                    <br><br>
+                   <b>¡Capacítate y sé parte de un cambio positivo en la atención hospitalaria!</b> 
+            </p>
+            <button class="close-btn" onclick="closePopup('popup2')">Cerrar</button>
+        </div>
+        <div id="popup3" class="popup">
+            <button class="close-btn-x" onclick="closePopup('popup3')">&times;</button>
+            <h2>Comunicaciones</h2>
+            <img src="assets/img/sanmarcos2024-2.jpeg" alt="Imagen 3">
+            <p style="color:rgb(20, 205, 205)">
+            Únete a <b>Hablemos de Psicología</b> los viernes a las  11am por el canal TV 22, las plataformas
+             de la SUPER RADIO TV y la alcaldía de Chinchiná y fortalece la comunicación
+             sociocomunitaria y psicoeducativa.
+             
+             <br><br>A través de este programa, 
+             llevamos el conocimiento psicológico a la comunidad,
+              brindando herramientas para el bienestar emocional, 
+              la convivencia saludable y el desarrollo personal, al tiempo que resolvermos dudas y socializamos resultados de nuestras intervenciones.
+              <br><br> Exploramos temas clave que impactan la vida cotidiana de todos, 
+              ofreciendo un espacio de diálogo cercano y accesible.
+              <br><br> Sé parte de esta iniciativa que conecta la psicología
+               con la realidad de nuestra comunidad, 
+               creando un impacto positivo en la vida de cada espectador.
+              
+
+            </p>
+            <button class="close-btn" onclick="closePopup('popup3')">Cerrar</button>
+        </div>
+ 
+
+        <!-- Botón para abrir el popup -->
+<button class="open-popup-btn" onclick="toggleAuthorPopup()">👨🏻‍⚕️</button>
+
+<!-- Popup final autor  -->
+<div id="author-popup" class="author-popup">
+    
+    <img src="assets/img/breitner.png" alt="Foto del Autor">
+    <h1 style="color: chocolate;">Sobre el Supervisor</h1>
+    
+    <p style="
+    font-family: Segoe script; 
+    font-size: 1.2em; 
+    color: #333; 
+    text-align: center; 
+    line-height: 1.5; 
+    margin: 20px 0;
+">
+    <span style="
+        font-weight: bold; 
+        color: #007bff; 
+        background-color: #f0f8ff; 
+        padding: 5px 10px; 
+        border-radius: 5px; 
+        display: inline-block; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    ">Breitner Arteaga R</span> <br><br>
+ <b>Docente CODA</b> 
+</p>
+
+
+
+    <p style="color: darkblue; font-family:Arial, sans-serif;" >Magister en Psicología Terapia familiar y de pareja<br><br>
+        Magister(c) Didáctica digital<br><br>
+        Desarrollo web <br><br>
+        Capacitador empresarial<br><br>
+        Investigador en salud<br><br>
+        Líder semillero Eupsychia<br><br>
+        <p style="
+    font-family: Segoe script; 
+    font-size: 1.2em; 
+    color: #333; 
+    text-align: center; 
+    line-height: 1.5; 
+    margin: 20px 0;
+">
+    <span style="
+        font-weight: bold; 
+        color: #007bff; 
+        background-color: #f0f8ff; 
+        padding: 5px 10px; 
+        border-radius: 5px; 
+        display: inline-block; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    ">Experiencias</span>
+    <p style="color: darkblue; font-family:Arial, sans-serif;"> 
+        15 años experiencias en Programas de atención en salud 
+        para enfermedades crónicas, raras
+         y huérfanas como hemofilia, Von willebrand, Guillain-Barré,esclerosis múltiples, artritis, síndrome de morquio, otras
+    
+    </p>
+    <!-- Botón de cierre en la parte superior -->
+    <button class="close-author-popup" onclick="closeAuthorPopup()">x</button>
+    <!-- Nuevo botón azul en la parte inferior -->
+    <button class="blue-close-popup" onclick="closeAuthorPopup()">Cerrar</button>
+</div>
+
+
+
+
+        
+        <div class="footer">
+            &copy; OVAQUIRÓN2024
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
